@@ -24,12 +24,39 @@ void Behebeendlosschleife();
 class Bild
 {
     private:
+        /**
+         * @brief enthält den vom Benutzer eingegebenen Kommentar
+        */
         std::string Kommentar;
+
+        /**
+         * @brief enthält die Auflösung vom pgm-Bild 
+        */
         std::vector <unsigned int> Aufloesung;
+
+        /**
+         * @brief Zwischenspeicher für eine Zeile von der Matrix
+        */
         std::vector <unsigned char> EineZeile;
+
+        /**
+         * @brief enthält die eingelesenen Daten vom pgm-Bild als strings
+        */
         std::vector <std::string> DateialsString;
+
+        /**
+         * @brief enthält umgewandelte Daten vom pgm-Bild als string, wird nur benötigt wenn das PGM im "1-Pixel-pro-Zeile" Format importiert wird
+        */
         std::vector <std::string> AndereDateialsString;
+
+        /**
+         * @brief enthät die Daten vom eingelesenen pgm-Bild als unsigned chars
+        */
         std::vector <std::vector <unsigned char>> Bildfertig;
+
+        /**
+         * @brief enthält die Daten vom bearbeiteten pgm-Bild als unsigned chars
+        */
         std::vector <std::vector <unsigned char>> BearbeitetesBild;
         
     public:
@@ -76,23 +103,36 @@ class Bild
         int TestetgroessevonDateialsString();
 
         /**
-         * @fn SpeichertAufloesung();
-         * 
+         * @fn SpeichertAufloesung()
+         * @brief Liest die Aufloesung und Speichert sie in einen Vektor
+         * @see Bild::DateialsString
          */
         void SpeichertAufloesung ();
         
         /**
-         * @fn 
-         * @brief
-         * @param 1
-         * @param 2
-         * @pre
-         * @pre
+         * @fn SpeichertDaten(int, int)
+         * @brief Wandelt eine als String gespeicherte Bildzeil in unsigned chars um
+         * @param 1 int Gibt an welcher Stelle die Datei in unsigned chars konvertiert werden soll
+         * @param 2 int Gibt an aus welchem Vektor die Inhalte konvertiert werden sollen
+         * @pre param 1 muss eine Zahl größer als 0 sein
+         * @pre param 2 muss entweder 1 oder 2 sein
          * @returns Vektor der Eine Zeile der Matrix speichert
-         * @see Bild::SetzeBildzusammen(int)
+         * @see Bild::SetzeBildzusammen(int), Bild::DateialsString, Bild::AndereDateialsString
         */
         std::vector <unsigned char> SpeichertDaten (int, int);
+
+        /**
+         * @fn Bildgeglaettet() const
+         * @brief Glaettet das pgm-Bild
+         * @returns 2-Dimensionalen Vektor der die Pixeldaten des Bildes als unsigned chars enthält
+        */
         std::vector <std::vector <unsigned char>> Bildgeglaettet() const;
+
+        /**
+         * @fn Bildkantenbild() const
+         * @brief Hebt die Kanten vom pgm-Bild hervor
+         * @returns 2-Dimensionalen Vektor der die Pixeldaten des Bildes als unsigned chars enthät
+        */
         std::vector <std::vector <unsigned char>> Bildkantenbild() const;
 
         /**
@@ -112,9 +152,5 @@ class Bild
          * @brief Als friend gesetzt damit auf die Klasse zugegriffen werden kann
         */   
         friend std::ostream& operator<< (std::ofstream& out, const Bild& Bild1);
-
-        
-        
-
 };
 

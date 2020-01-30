@@ -6,9 +6,8 @@ Bild::Bild() {}
 //wandelt die Zahlen die als String gespeichert sind in int's um
 std::vector <unsigned char> Bild::SpeichertDaten (int i, int j)
 {
-    std::vector <unsigned char> Speichertest;
+    std::vector <unsigned char> SpeicherteineZeile;
     int Wertalsint;
-    unsigned char c;
     unsigned char Wertalschar;
     
     if (j == 1)
@@ -17,9 +16,8 @@ std::vector <unsigned char> Bild::SpeichertDaten (int i, int j)
         while (test)
         {
             test >> Wertalsint;
-            c = Wertalsint;
-            Wertalschar = c;
-    	    Speichertest.push_back(Wertalschar);
+            Wertalschar = Wertalsint;
+    	    SpeicherteineZeile.push_back(Wertalschar);
         } 
     }
 
@@ -29,13 +27,12 @@ std::vector <unsigned char> Bild::SpeichertDaten (int i, int j)
         while (test)
         {
             test >> Wertalsint;
-            c = Wertalsint;
-            Wertalschar = c;
-    	    Speichertest.push_back(Wertalschar);
+            Wertalschar = Wertalsint;
+    	    SpeicherteineZeile.push_back(Wertalschar);
         }
     }        
     
-    return Speichertest;
+    return SpeicherteineZeile;
 }
 
 void Bild::SpeichertAufloesung()
