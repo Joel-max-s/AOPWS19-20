@@ -6,7 +6,7 @@ std::istream& operator>> (std::ifstream& in, Bild& Bild1)
     int i = 0;
 
 	while( ifs )
-    {
+    {   
         std::string zeile;
     	std::getline(ifs, zeile);
         if (i == 2)
