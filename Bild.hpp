@@ -12,12 +12,6 @@
 #include <sstream>
 
 /**
- * @fn Behebeendlosschleife
- * @brief leert Buffer von Eingabestrom und lässt das "Enter ignorieren um Endlosschleifen vorzubeugen"
-*/
-void Behebeendlosschleife();
-
-/**
  * @class Bild
  * @brief Klasse für das Bild
 */

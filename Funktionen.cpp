@@ -4,6 +4,7 @@ std::istream& operator>> (std::ifstream& in, Bild& Bild1)
 {
     std::ifstream& ifs (in);
     int i = 0;
+
 	while( ifs )
     {
         std::string zeile;
@@ -47,21 +48,7 @@ std::ostream& operator<< (std::ostream& out, const Bild& Bild1)
         out <<"\n";
 	}
     out <<"\n\n";
-   return out;
-}
-
-int AbfrageBildart()
-{
-    int Abfrage;
-    do
-    {
-        std::cout <<"Liegt das das PGM-Bild als Matrix oder Zeilenweise vor?" <<std::endl;
-        std::cout <<"(1)    Als Matrix (standart)" <<std::endl;
-        std::cout <<"(2)    Zeilenweise (oft wenn von anderem Dateivormat zu PGM exportiert wurde)" <<std::endl;
-        std::cin >>Abfrage;
-        Entlosschleifebehen();
-    } while (Abfrage != 1 && Abfrage != 2);
-    return Abfrage;
+    return out;
 }
 
 std::string AbfrageImportierName()
@@ -103,13 +90,26 @@ int AbfrageBildaufKonsoleAusgeben()
         std::cout <<"(1)    Bild nicht auf Konsole ausgeben (empfohlen bei Bildern hoher Aufloesung)" <<std::endl;
         std::cout <<"(2)    Bild auf Konsole ausgeben (nur wenn das Bild eine sehr geringe Aufloesung hat)" <<std::endl;
         std::cin >>Abfrage;
-        Entlosschleifebehen();
+        Endlosschleifebeben();
+
+        if (Abfrage == 2)
+        {
+            std::cout <<std::endl <<std::endl;
+            std::cout <<"Sind sie sich wirklich sicher?" <<std::endl;
+            std::cout <<"Wenn das Importierte Bild eine hohe Aufloesung hat, sollte dieses nicht auf der Konsole ausgegeben werden." <<std::endl;
+            std::cout <<"Das Ausgeben des Bildes kann unter umstaenden mehrere Minuten dauern und kann nicht unterbrochen werden." <<std::endl;
+            std::cout <<"(1)    Bild nicht auf Konsole ausgeben (meisten empfohlen)" <<std::endl;
+            std::cout <<"(2)    Bild auf Konsole ausgeben (in den meinsten Faellen nicht empfohlen)" <<std::endl;
+            std::cin >>Abfrage;
+            Endlosschleifebeben();
+        }
+
         std::cout <<std::endl <<std::endl;
-    } while (Abfrage != 1 && Abfrage != 2); //&& !isdigit(Abfrage));
+    } while (Abfrage != 1 && Abfrage != 2);
     return Abfrage;
 }
 
-void Entlosschleifebehen()
+void Endlosschleifebeben()
 {
     if (std::cin.fail()) 
     {

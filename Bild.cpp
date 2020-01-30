@@ -1,9 +1,8 @@
 #include "Bild.hpp"
+#include "Funktionen.hpp"
 
-//Leerer Konstruktor
 Bild::Bild() {}
 
-//wandelt die Zahlen die als String gespeichert sind in int's um
 std::vector <unsigned char> Bild::SpeichertDaten (int i, int j)
 {
     std::vector <unsigned char> SpeicherteineZeile;
@@ -46,8 +45,6 @@ void Bild::SpeichertAufloesung()
     }
 }
 
-//Füllt einen Vektor in dem die Auflösung von dem Bild gespeichert ist
-//Füllt einen Vektor bestehen aus Vektoren in denen die Helligkeit der Pixel gespeichert ist
 void Bild::SetzeBildZusammen(int Abfrage)
 {
     if (Abfrage == 1)
@@ -85,7 +82,6 @@ void Bild::SetzeBildanderszusammen(int Abfrage)
     }
 }
 
-//kann Bild glaetten
 std::vector <std::vector <unsigned char>> Bild::Bildgeglaettet() const
 {
     std::vector <std::vector <unsigned char>> neuesBild;
@@ -112,7 +108,6 @@ std::vector <std::vector <unsigned char>> Bild::Bildgeglaettet() const
     return neuesBild;
 }
 
-//kann Kanten hervorheben
 std::vector <std::vector <unsigned char>> Bild::Bildkantenbild() const
 {
     std::vector <std::vector <unsigned char>> neuesBild;
@@ -148,7 +143,7 @@ void Bild::fuelleBearbeitetesBild()
         std::cout <<"(1)    Bild glaetten" <<std::endl;
         std::cout <<"(2)    Kanten vom Bild hervorheben" <<std::endl;
         std::cin >>i;
-        Behebeendlosschleife();
+        Endlosschleifebeben();
         std::cout <<std::endl <<std::endl;
     }
     while (i != 1 && i != 2);
@@ -180,7 +175,7 @@ void Bild::AbfrageKommentar()
         std::cout <<"(1)    ja" <<std::endl;
         std::cout <<"(2)    nein" <<std::endl;
         std::cin >>Abfrage;
-        Behebeendlosschleife();
+        Endlosschleifebeben();
         std::cout <<std::endl;
     } while (Abfrage != 1 && Abfrage != 2);
 
@@ -198,14 +193,5 @@ void Bild::AbfrageKommentar()
     {
         std::cout <<std::endl;
         Kommentar = " ";
-    }
-}
-
-void Behebeendlosschleife()
-{
-    if (std::cin.fail()) 
-    {
-        std::cin.clear();
-        std::cin.ignore(INT8_MAX, '\n');
     }
 }
