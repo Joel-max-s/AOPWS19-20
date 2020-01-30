@@ -12,36 +12,42 @@
 #include "Bild.hpp"
 
 /**
- * @fn Endlosschleifebeheben()
+ * Falls etwas bei einer Eingabe schiefgelaufen ist, behebt diese Funktion Endlosschleifen.
+ * Dies geschieht indem der Buffer geleert und Enters ignoriert werden.
+ * @fn Endlosschleifebeben()
  * @brief beugt Endlosschleifen vor
 */
 void Endlosschleifebeben();
 
 /**
+ * Der Benutzer wird gefragt welche pgm-Datei importiert werden soll.
  * @fn AbfrageImportierName()
- * @brief Fragt den Benutzer welche pgm-Datei importiert werden soll
+ * @brief Fragt Import-Datei ab
  * @returns den Dateinamen
 */
 std::string AbfrageImportierName();
 
 /**
+ * Der Benutzer wird gefragt wie die zu exportierende pgm-Datei genannt werden soll.
  * @fn AbfrageExportierName()
- * @brief Fragt den Benutzer wie die zu exportierende pgm-Datei genannt werden soll
+ * @brief Fragt nach Export-Namen
  * @returns den Dateinamen
 */
 std::string AbfrageExportierName();
 
 /**
+ * Der Benutzer wird gefragt ob das Bild auf der Konsole ausgegeben werden soll.
  * @fn AbfrageBildaufKonsoleAusgeben()
- * @brief Fragt den Benutzer ob das bearbeitete Bild auf der Konsole ausgegeben werden soll
+ * @brief Fragt nach Konsolenausgabe
  * @returns int der darüber entscheidet ob das Bild auf der Konsole ausgegeben werden soll
  * @see operator<< (std::ostream&, const Bild&)
 */
 int AbfrageBildaufKonsoleAusgeben();
 
 /**
+ * Die pgm-Datei wird eingelesen und in dem Vektor Bild::DateialsString gespeichert.
  * @fn operator>> (std::ifstream&, Bild&)
- * @brief liest die Datei ein und speichert die Daten in einen string
+ * @brief liest Datei ein
  * @see Bild::DateialsString
 */
 std::istream& operator>> (std::ifstream&, Bild&);
