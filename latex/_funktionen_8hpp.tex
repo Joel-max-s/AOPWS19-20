@@ -1,0 +1,98 @@
+\hypertarget{_funktionen_8hpp}{}\doxysection{Funktionen.\+hpp File Reference}
+\label{_funktionen_8hpp}\index{Funktionen.hpp@{Funktionen.hpp}}
+
+
+Header Datei für Funktionen die in der main benötigt werden.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}Bild.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_funktionen_8hpp_a0c5ceb3d2c1a84fb2f0540909bc6d965}\label{_funktionen_8hpp_a0c5ceb3d2c1a84fb2f0540909bc6d965}} 
+void {\bfseries Endlosschleifebeben} ()
+\item 
+std\+::string \mbox{\hyperlink{_funktionen_8hpp_a2fe663a0af7a0c6bcf4499a9f1d0c555}{Abfrage\+Importier\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Fragt den Benutzer welche pgm-\/\+Datei importiert werden soll. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{_funktionen_8hpp_a4c238dc0e4f11e1ceb368d0ea19d605f}{Abfrage\+Exportier\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Fragt den Benutzer wie die zu exportierende pgm-\/\+Datei genannt werden soll. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_funktionen_8hpp_a4dda717b1e76a2f10933e0886ca37b7e}{Abfrage\+Bildauf\+Konsole\+Ausgeben}} ()
+\begin{DoxyCompactList}\small\item\em Fragt den Benutzer ob das bearbeitete \mbox{\hyperlink{class_bild}{Bild}} auf der Konsole ausgegeben werden soll. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{_funktionen_8hpp_ac49f03ee4c2c5bc68744ca183c7a95b4}{operator$>$$>$}} (std\+::ifstream \&, \mbox{\hyperlink{class_bild}{Bild}} \&)
+\begin{DoxyCompactList}\small\item\em liest die Datei ein und speichert die Daten in einen string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_funktionen_8hpp_a95fcd01e0b84abf2debd1453ca36a113}\label{_funktionen_8hpp_a95fcd01e0b84abf2debd1453ca36a113}} 
+std\+::ostream \& \mbox{\hyperlink{_funktionen_8hpp_a95fcd01e0b84abf2debd1453ca36a113}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_bild}{Bild}} \&)
+\begin{DoxyCompactList}\small\item\em kann das bearbeitete \mbox{\hyperlink{class_bild}{Bild}} auf der Konsole ausgeben \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_funktionen_8hpp_a6f2b7e568c13eb48f9a4370874e89a7a}\label{_funktionen_8hpp_a6f2b7e568c13eb48f9a4370874e89a7a}} 
+std\+::ostream \& \mbox{\hyperlink{_funktionen_8hpp_a6f2b7e568c13eb48f9a4370874e89a7a}{operator$<$$<$}} (std\+::ofstream \&, const \mbox{\hyperlink{class_bild}{Bild}} \&)
+\begin{DoxyCompactList}\small\item\em schreibt die Daten vom bearbeiteten \mbox{\hyperlink{class_bild}{Bild}} in eine pgm-\/\+Datei \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header Datei für Funktionen die in der main benötigt werden. 
+
+\begin{DoxyAuthor}{Author}
+Joel Maximilian Seidel 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_funktionen_8hpp_a4dda717b1e76a2f10933e0886ca37b7e}\label{_funktionen_8hpp_a4dda717b1e76a2f10933e0886ca37b7e}} 
+\index{Funktionen.hpp@{Funktionen.hpp}!AbfrageBildaufKonsoleAusgeben@{AbfrageBildaufKonsoleAusgeben}}
+\index{AbfrageBildaufKonsoleAusgeben@{AbfrageBildaufKonsoleAusgeben}!Funktionen.hpp@{Funktionen.hpp}}
+\doxysubsubsection{\texorpdfstring{AbfrageBildaufKonsoleAusgeben()}{AbfrageBildaufKonsoleAusgeben()}}
+{\footnotesize\ttfamily int Abfrage\+Bildauf\+Konsole\+Ausgeben (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fragt den Benutzer ob das bearbeitete \mbox{\hyperlink{class_bild}{Bild}} auf der Konsole ausgegeben werden soll. 
+
+\begin{DoxyReturn}{Returns}
+int der darüber entscheidet ob das \mbox{\hyperlink{class_bild}{Bild}} auf der Konsole ausgegeben werden soll 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+operator$<$$<$ (std\+::ostream\&, const \mbox{\hyperlink{class_bild}{Bild}}\&) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_funktionen_8hpp_a4c238dc0e4f11e1ceb368d0ea19d605f}\label{_funktionen_8hpp_a4c238dc0e4f11e1ceb368d0ea19d605f}} 
+\index{Funktionen.hpp@{Funktionen.hpp}!AbfrageExportierName@{AbfrageExportierName}}
+\index{AbfrageExportierName@{AbfrageExportierName}!Funktionen.hpp@{Funktionen.hpp}}
+\doxysubsubsection{\texorpdfstring{AbfrageExportierName()}{AbfrageExportierName()}}
+{\footnotesize\ttfamily std\+::string Abfrage\+Exportier\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fragt den Benutzer wie die zu exportierende pgm-\/\+Datei genannt werden soll. 
+
+\begin{DoxyReturn}{Returns}
+den Dateinamen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_funktionen_8hpp_a2fe663a0af7a0c6bcf4499a9f1d0c555}\label{_funktionen_8hpp_a2fe663a0af7a0c6bcf4499a9f1d0c555}} 
+\index{Funktionen.hpp@{Funktionen.hpp}!AbfrageImportierName@{AbfrageImportierName}}
+\index{AbfrageImportierName@{AbfrageImportierName}!Funktionen.hpp@{Funktionen.hpp}}
+\doxysubsubsection{\texorpdfstring{AbfrageImportierName()}{AbfrageImportierName()}}
+{\footnotesize\ttfamily std\+::string Abfrage\+Importier\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fragt den Benutzer welche pgm-\/\+Datei importiert werden soll. 
+
+\begin{DoxyReturn}{Returns}
+den Dateinamen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_funktionen_8hpp_ac49f03ee4c2c5bc68744ca183c7a95b4}\label{_funktionen_8hpp_ac49f03ee4c2c5bc68744ca183c7a95b4}} 
+\index{Funktionen.hpp@{Funktionen.hpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Funktionen.hpp@{Funktionen.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{in,  }\item[{\mbox{\hyperlink{class_bild}{Bild}} \&}]{Bild1 }\end{DoxyParamCaption})}
+
+
+
+liest die Datei ein und speichert die Daten in einen string 
+
+\begin{DoxySeeAlso}{See also}
+Bild\+::\+Dateials\+String 
+\end{DoxySeeAlso}

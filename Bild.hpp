@@ -18,40 +18,13 @@
 class Bild
 {
     private:
-        /**
-         * @brief enthält den vom Benutzer eingegebenen Kommentar
-        */
-        std::string Kommentar;
-
-        /**
-         * @brief enthält die Auflösung vom pgm-Bild 
-        */
-        std::vector <unsigned int> Aufloesung;
-
-        /**
-         * @brief Zwischenspeicher für eine Zeile von der Matrix
-        */
-        std::vector <unsigned char> EineZeile;
-
-        /**
-         * @brief enthält die eingelesenen Daten vom pgm-Bild als strings
-        */
-        std::vector <std::string> DateialsString;
-
-        /**
-         * @brief enthält umgewandelte Daten vom pgm-Bild als string, wird nur benötigt wenn das PGM im "1-Pixel-pro-Zeile" Format importiert wird
-        */
-        std::vector <std::string> AndereDateialsString;
-
-        /**
-         * @brief enthät die Daten vom eingelesenen pgm-Bild als unsigned chars
-        */
-        std::vector <std::vector <unsigned char>> Bildfertig;
-
-        /**
-         * @brief enthält die Daten vom bearbeiteten pgm-Bild als unsigned chars
-        */
-        std::vector <std::vector <unsigned char>> BearbeitetesBild;
+        std::string Kommentar; /**< enthält den vom Benutzer eingegebenen Kommentar */
+        std::vector <unsigned int> Aufloesung; /**< enthält die Auflösung vom pgm-Bild */
+        std::vector <unsigned char> EineZeile; /**< Zwischenspeicher für eine Zeile von der Matrix */
+        std::vector <std::string> DateialsString; /**< enthält die eingelesenen Daten vom pgm-Bild als strings */
+        std::vector <std::string> AndereDateialsString; /**< enthält umgewandelte Daten vom pgm-Bild als string, wird nur benötigt wenn das PGM im "1-Pixel-pro-Zeile" Format importiert wird */
+        std::vector <std::vector <unsigned char>> Bildfertig; /**< enthät die Daten vom eingelesenen pgm-Bild als unsigned chars */
+        std::vector <std::vector <unsigned char>> BearbeitetesBild; /**< enthält die Daten vom bearbeiteten pgm-Bild als unsigned chars */
         
     public:
         /**
@@ -75,7 +48,7 @@ class Bild
         void SetzeBildZusammen(int);
 
         /**
-         * @fn fuelleBearbeitetrsBild()
+         * @fn fuelleBearbeitetesBild()
          * @brief füllt einen Vektor mit den bearbeiteten Bilddaten
         */
         void fuelleBearbeitetesBild();

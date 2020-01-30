@@ -1,0 +1,180 @@
+\hypertarget{class_bild}{}\doxysection{Bild Class Reference}
+\label{class_bild}\index{Bild@{Bild}}
+
+
+Klasse für das \mbox{\hyperlink{class_bild}{Bild}}.  
+
+
+
+
+{\ttfamily \#include $<$Bild.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bild_a9e01cb65b790052d653a01e0da9acfb2}\label{class_bild_a9e01cb65b790052d653a01e0da9acfb2}} 
+\mbox{\hyperlink{class_bild_a9e01cb65b790052d653a01e0da9acfb2}{Bild}} ()
+\begin{DoxyCompactList}\small\item\em leerer Konstruktor für die Klasse \mbox{\hyperlink{class_bild}{Bild}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bild_a0cc9d5041546f8a46de8f51c2d0a4e4e}\label{class_bild_a0cc9d5041546f8a46de8f51c2d0a4e4e}} 
+void \mbox{\hyperlink{class_bild_a0cc9d5041546f8a46de8f51c2d0a4e4e}{Abfrage\+Kommentar}} ()
+\begin{DoxyCompactList}\small\item\em Lässt Benutzer Kommentar in \mbox{\hyperlink{class_bild}{Bild}} schreiben. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bild_a0a90b52a48b3a8d3a0faf811a7305073}{Setze\+Bild\+Zusammen}} (int)
+\begin{DoxyCompactList}\small\item\em Füllt einen Vektor in dem die Auflösung gespeichert ist, Füllt einen anderen Zweidimensionalen Vektor in dem die Helligkeiten der Pixel gespeichert werden. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bild_a63872e0546dcb980a4ca50ebb0ee29e1}\label{class_bild_a63872e0546dcb980a4ca50ebb0ee29e1}} 
+void \mbox{\hyperlink{class_bild_a63872e0546dcb980a4ca50ebb0ee29e1}{fuelle\+Bearbeitetes\+Bild}} ()
+\begin{DoxyCompactList}\small\item\em füllt einen Vektor mit den bearbeiteten Bilddaten \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bild_a75c9fb9539945f7bc473dee836436d9d}{Setze\+Bildanderszusammen}} (int)
+\begin{DoxyCompactList}\small\item\em Wandelt ein eine-\/\+Zahl-\/pro-\/\+Zeile \mbox{\hyperlink{class_bild}{Bild}} in einen 2D-\/\+Vektor um. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bild_a4e9a4d7c9f2ddf5cb4475eae6bd3873d}{Testetgroessevon\+Dateials\+String}} ()
+\begin{DoxyCompactList}\small\item\em Anhand der Anzahl der Eingelesenen Zeilen wird entschieden ob die eingelesenen Daten noch konvertiert werden müssen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bild_a4495e97dd2d3f90400c2f751932357df}{Speichert\+Aufloesung}} ()
+\begin{DoxyCompactList}\small\item\em Liest die Aufloesung und Speichert sie in einen Vektor. \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned char $>$ \mbox{\hyperlink{class_bild_adc269a9dda5e0ed3c64dca2d2f760dc6}{Speichert\+Daten}} (int, int)
+\begin{DoxyCompactList}\small\item\em Wandelt eine als String gespeicherte Bildzeil in unsigned chars um. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ \mbox{\hyperlink{class_bild_a32f4330fed402445ac9b1b6319e782eb}{Bildgeglaettet}} () const
+\begin{DoxyCompactList}\small\item\em Glaettet das pgm-\/\+Bild. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ unsigned char $>$ $>$ \mbox{\hyperlink{class_bild_a460b9a10887bd67a364a42f392efa212}{Bildkantenbild}} () const
+\begin{DoxyCompactList}\small\item\em Hebt die Kanten vom pgm-\/\+Bild hervor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bild_a2fbf6f95ec4557bc652b3e2b23c25ca5}\label{class_bild_a2fbf6f95ec4557bc652b3e2b23c25ca5}} 
+std\+::istream \& {\bfseries operator$>$$>$} (std\+::ifstream \&in, \mbox{\hyperlink{class_bild}{Bild}} \&Bild1)
+\item 
+\mbox{\Hypertarget{class_bild_a97901a7f35755cd6a46e0b56d7adb8ef}\label{class_bild_a97901a7f35755cd6a46e0b56d7adb8ef}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{class_bild}{Bild}} \&Bild1)
+\item 
+\mbox{\Hypertarget{class_bild_a6b442b16a11ded2fdf36fa13ea503484}\label{class_bild_a6b442b16a11ded2fdf36fa13ea503484}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ofstream \&out, const \mbox{\hyperlink{class_bild}{Bild}} \&Bild1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasse für das \mbox{\hyperlink{class_bild}{Bild}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bild_a32f4330fed402445ac9b1b6319e782eb}\label{class_bild_a32f4330fed402445ac9b1b6319e782eb}} 
+\index{Bild@{Bild}!Bildgeglaettet@{Bildgeglaettet}}
+\index{Bildgeglaettet@{Bildgeglaettet}!Bild@{Bild}}
+\doxysubsubsection{\texorpdfstring{Bildgeglaettet()}{Bildgeglaettet()}}
+{\footnotesize\ttfamily Bild\+::\+Bildgeglaettet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Glaettet das pgm-\/\+Bild. 
+
+\begin{DoxyReturn}{Returns}
+2-\/Dimensionalen Vektor der die Pixeldaten des Bildes als unsigned chars enthält 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bild_a460b9a10887bd67a364a42f392efa212}\label{class_bild_a460b9a10887bd67a364a42f392efa212}} 
+\index{Bild@{Bild}!Bildkantenbild@{Bildkantenbild}}
+\index{Bildkantenbild@{Bildkantenbild}!Bild@{Bild}}
+\doxysubsubsection{\texorpdfstring{Bildkantenbild()}{Bildkantenbild()}}
+{\footnotesize\ttfamily Bild\+::\+Bildkantenbild (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Hebt die Kanten vom pgm-\/\+Bild hervor. 
+
+\begin{DoxyReturn}{Returns}
+2-\/Dimensionalen Vektor der die Pixeldaten des Bildes als unsigned chars enthät 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bild_a75c9fb9539945f7bc473dee836436d9d}\label{class_bild_a75c9fb9539945f7bc473dee836436d9d}} 
+\index{Bild@{Bild}!SetzeBildanderszusammen@{SetzeBildanderszusammen}}
+\index{SetzeBildanderszusammen@{SetzeBildanderszusammen}!Bild@{Bild}}
+\doxysubsubsection{\texorpdfstring{SetzeBildanderszusammen()}{SetzeBildanderszusammen()}}
+{\footnotesize\ttfamily Bild\+::\+Setze\+Bildanderszusammen (\begin{DoxyParamCaption}\item[{int}]{Abfrage }\end{DoxyParamCaption})}
+
+
+
+Wandelt ein eine-\/\+Zahl-\/pro-\/\+Zeile \mbox{\hyperlink{class_bild}{Bild}} in einen 2D-\/\+Vektor um. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & int Entscheidet darüber ob Methode überhaupt ausgeführt werden muss \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+param 1 muss 2 sein damit die Methode wirksam ist 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_bild_a0a90b52a48b3a8d3a0faf811a7305073}\label{class_bild_a0a90b52a48b3a8d3a0faf811a7305073}} 
+\index{Bild@{Bild}!SetzeBildZusammen@{SetzeBildZusammen}}
+\index{SetzeBildZusammen@{SetzeBildZusammen}!Bild@{Bild}}
+\doxysubsubsection{\texorpdfstring{SetzeBildZusammen()}{SetzeBildZusammen()}}
+{\footnotesize\ttfamily Bild\+::\+Setze\+Bild\+Zusammen (\begin{DoxyParamCaption}\item[{int}]{Abfrage }\end{DoxyParamCaption})}
+
+
+
+Füllt einen Vektor in dem die Auflösung gespeichert ist, Füllt einen anderen Zweidimensionalen Vektor in dem die Helligkeiten der Pixel gespeichert werden. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & int Entscheidet über welche Methode weitergerechnet werden soll \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+param 1 muss entweder 1 oder 2 sein 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_bild_a4495e97dd2d3f90400c2f751932357df}\label{class_bild_a4495e97dd2d3f90400c2f751932357df}} 
+\index{Bild@{Bild}!SpeichertAufloesung@{SpeichertAufloesung}}
+\index{SpeichertAufloesung@{SpeichertAufloesung}!Bild@{Bild}}
+\doxysubsubsection{\texorpdfstring{SpeichertAufloesung()}{SpeichertAufloesung()}}
+{\footnotesize\ttfamily Bild\+::\+Speichert\+Aufloesung (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Liest die Aufloesung und Speichert sie in einen Vektor. 
+
+\begin{DoxySeeAlso}{See also}
+Bild\+::\+Dateials\+String 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_bild_adc269a9dda5e0ed3c64dca2d2f760dc6}\label{class_bild_adc269a9dda5e0ed3c64dca2d2f760dc6}} 
+\index{Bild@{Bild}!SpeichertDaten@{SpeichertDaten}}
+\index{SpeichertDaten@{SpeichertDaten}!Bild@{Bild}}
+\doxysubsubsection{\texorpdfstring{SpeichertDaten()}{SpeichertDaten()}}
+{\footnotesize\ttfamily Bild\+::\+Speichert\+Daten (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Wandelt eine als String gespeicherte Bildzeil in unsigned chars um. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & int Gibt an welcher Stelle die Datei in unsigned chars konvertiert werden soll \\
+\hline
+{\em 2} & int Gibt an aus welchem Vektor die Inhalte konvertiert werden sollen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+param 1 muss eine Zahl größer als 0 sein 
+
+param 2 muss entweder 1 oder 2 sein 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Vektor der Eine Zeile der Matrix speichert 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Bild\+::\+Setze\+Bildzusammen(int), Bild\+::\+Dateials\+String, Bild\+::\+Andere\+Dateials\+String 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_bild_a4e9a4d7c9f2ddf5cb4475eae6bd3873d}\label{class_bild_a4e9a4d7c9f2ddf5cb4475eae6bd3873d}} 
+\index{Bild@{Bild}!TestetgroessevonDateialsString@{TestetgroessevonDateialsString}}
+\index{TestetgroessevonDateialsString@{TestetgroessevonDateialsString}!Bild@{Bild}}
+\doxysubsubsection{\texorpdfstring{TestetgroessevonDateialsString()}{TestetgroessevonDateialsString()}}
+{\footnotesize\ttfamily Bild\+::\+Testetgroessevon\+Dateials\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Anhand der Anzahl der Eingelesenen Zeilen wird entschieden ob die eingelesenen Daten noch konvertiert werden müssen. 
+
+\begin{DoxyReturn}{Returns}
+int 1 oder int 2 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_bild_a75c9fb9539945f7bc473dee836436d9d}{Bild\+::\+Setze\+Bildanderszusammen}}, \mbox{\hyperlink{class_bild_a0a90b52a48b3a8d3a0faf811a7305073}{Bild\+::\+Setze\+Bild\+Zusammen}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_bild_8hpp}{Bild.\+hpp}}\item 
+Bild.\+cpp\end{DoxyCompactItemize}
