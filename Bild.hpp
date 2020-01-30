@@ -147,4 +147,3 @@ class Bild
         */   
         friend std::ostream& operator<< (std::ofstream& out, const Bild& Bild1);
 };
-
