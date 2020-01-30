@@ -98,7 +98,7 @@ int AbfrageBildaufKonsoleAusgeben()
             std::cout <<"Sind sie sich wirklich sicher?" <<std::endl;
             std::cout <<"Wenn das Importierte Bild eine hohe Aufloesung hat, sollte dieses nicht auf der Konsole ausgegeben werden." <<std::endl;
             std::cout <<"Das Ausgeben des Bildes kann unter umstaenden mehrere Minuten dauern und kann nicht unterbrochen werden." <<std::endl;
-            std::cout <<"(1)    Bild nicht auf Konsole ausgeben (meisten empfohlen)" <<std::endl;
+            std::cout <<"(1)    Bild nicht auf Konsole ausgeben (meistens empfohlen)" <<std::endl;
             std::cout <<"(2)    Bild auf Konsole ausgeben (in den meinsten Faellen nicht empfohlen)" <<std::endl;
             std::cin >>Abfrage;
             Endlosschleifebeben();
