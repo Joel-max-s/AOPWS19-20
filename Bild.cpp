@@ -49,7 +49,7 @@ void Bild::SetzeBildZusammen(int Abfrage)
 {
     if (Abfrage == 1)
     {
-        for (int i = 1; i < DateialsString.size(); i++)
+        for (unsigned int i = 1; i < DateialsString.size(); i++)
         {
             EineZeile = SpeichertDaten(i, 1);
             Bildfertig.push_back(EineZeile);
@@ -57,7 +57,7 @@ void Bild::SetzeBildZusammen(int Abfrage)
     }
     if (Abfrage == 2)
     {
-        for (int i = 0; i < AndereDateialsString.size(); i++)
+        for (unsigned int i = 0; i < AndereDateialsString.size(); i++)
         {
             EineZeile = SpeichertDaten(i, 2);
             Bildfertig.push_back(EineZeile);
@@ -70,10 +70,10 @@ void Bild::SetzeBildanderszusammen(int Abfrage)
     if (Abfrage == 2)
     {
         DateialsString.erase(DateialsString.begin());
-        for (int i = 1; i < Aufloesung.at(1) +1; i++)
+        for (unsigned int i = 1; i < Aufloesung.at(1) +1; i++)
         {
             std::string Zusammengefasst;
-            for (int j = 0; j < Aufloesung.at(0); j++)
+            for (unsigned int j = 0; j < Aufloesung.at(0); j++)
             {
                 Zusammengefasst += " " + DateialsString.at(Aufloesung.at(0)*(i-1) + j);
             }
@@ -86,14 +86,14 @@ std::vector <std::vector <unsigned char>> Bild::Bildgeglaettet() const
 {
     std::vector <std::vector <unsigned char>> neuesBild;
     neuesBild.resize(Aufloesung.at(1));
-    for(int i = 0; i < neuesBild.size(); i++)
+    for(unsigned int i = 0; i < neuesBild.size(); i++)
     {
         neuesBild.at(i).resize(Aufloesung.at(0));
     }
 
-    for (int i = 0; i < Bildfertig.size(); i++)
+    for (unsigned int i = 0; i < Bildfertig.size(); i++)
     {
-        for (int j = 0; j < Bildfertig.at(i).size() -1; j++)
+        for (unsigned int j = 0; j < Bildfertig.at(i).size() -1; j++)
         {
             if (i == 0 || i == Aufloesung.at(1) - 1 || j == 0 || j == Aufloesung.at(0) - 1)
             {
@@ -112,14 +112,14 @@ std::vector <std::vector <unsigned char>> Bild::Bildkantenbild() const
 {
     std::vector <std::vector <unsigned char>> neuesBild;
     neuesBild.resize(Aufloesung.at(1));
-    for(int i = 0; i < neuesBild.size(); i++)
+    for(unsigned int i = 0; i < neuesBild.size(); i++)
     {
         neuesBild.at(i).resize(Aufloesung.at(0));
     }
 
-    for (int i = 0; i < Bildfertig.size(); i++)
+    for (unsigned int i = 0; i < Bildfertig.size(); i++)
     {
-        for (int j = 0; j < Bildfertig.at(i).size() -1; j++)
+        for (unsigned int j = 0; j < Bildfertig.at(i).size() -1; j++)
         {
             if (i == 0 || i == Aufloesung.at(1) - 1 || j == 0 || j == Aufloesung.at(0) - 1)
             {

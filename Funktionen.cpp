@@ -25,9 +25,9 @@ std::ostream& operator<< (std::ofstream& out, const Bild& Bild1)
     out <<+Bild1.Aufloesung.at(0) <<" " <<+Bild1.Aufloesung.at(1) <<"\n";
     out <<"255\n";
 
-    for (int i = 0; i < Bild1.BearbeitetesBild.size(); i++)
+    for (unsigned int i = 0; i < Bild1.BearbeitetesBild.size(); i++)
     {
-        for (int j = 0; j < Bild1.BearbeitetesBild.at(i).size(); j++)
+        for (unsigned int j = 0; j < Bild1.BearbeitetesBild.at(i).size(); j++)
         {
             out << +Bild1.BearbeitetesBild.at(i).at(j) <<" ";
         }
@@ -39,9 +39,9 @@ std::ostream& operator<< (std::ofstream& out, const Bild& Bild1)
 
 std::ostream& operator<< (std::ostream& out, const Bild& Bild1)
 {
-   for (int i = 0; i < Bild1.BearbeitetesBild.size(); i++)
+   for (unsigned int i = 0; i < Bild1.BearbeitetesBild.size(); i++)
     {
-    	for (int j = 0; j < Bild1.BearbeitetesBild.at(i).size(); j++)
+    	for (unsigned int j = 0; j < Bild1.BearbeitetesBild.at(i).size(); j++)
         {
             out <<+Bild1.BearbeitetesBild.at(i).at(j) << "  ";
         }

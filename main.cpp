@@ -1,7 +1,5 @@
-#include <vector>
 #include <string>
 #include <iostream>
-#include <fstream>
 #include <stdexcept>
 #include "Bild.hpp"
 #include "Funktionen.hpp"
