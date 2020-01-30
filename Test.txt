@@ -63,7 +63,7 @@ Moechten sie ein weiteres Bild bearbeiten?
 --- in diesem Durchlauf wird getestet was mit einer von GIMP exportierten Datei passiert ---
 --- die Dateien die von GIMP exportiert werden sind etwas anders aufgebaut ---
 --- anstatt das sie wie eine Matrix aussehen, ist pro Zeile nur eine Pixelhelligkeit dargestellt ---
---- die letzte Testdatei ist zudem relativ groß (ca. 34MB, 9216004 Zeilen) ---
+--- die letzte Testdatei ist zudem relativ groß (mehrere MB, 9216004 Zeilen) ---
 
 Wie heisst die Datei die Importiert werden soll?
 (Bitte .pgm am Ende nicht vergessen)
