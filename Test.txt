@@ -1,0 +1,98 @@
+--- normaler Testdurchlauf mit pgm-Datei mit geringer Auflösung ---
+
+Wie heisst die Datei die Importiert werden soll?
+(Bitte .pgm am Ende nicht vergessen)
+		feep.pgm
+		
+Soll das Bild geglaettet werden oder die Kanten vom Bild hervorgehoben werden?
+(1)    Bild glaetten
+(2)    Kanten vom Bild hervorheben
+		1
+		
+Wie soll die zu exportierende Datei heissen?
+(Bitte .pgm am Ende nicht vergessen)
+		feepgeglaettet.pgm
+		
+Moechten sie einen Kommentar hinzufuegen?
+(1)    ja
+(2)    nein
+		1
+
+Bitte schreiben sie ihren Kommentar:
+		Es wird das Wort feep mit geglaetteten Kanten gezeigt
+		
+Soll das bearbeitete Bild auf der Konsole ausgegeben werden?
+(1)    Bild nicht auf Konsole ausgeben (empfohlen bei Bildern hoher Aufloesung)
+(2)    Bild auf Konsole ausgeben (nur wenn das Bild eine sehr geringe Aufloesung hat)
+		2
+
+Sind sie sich wirklich sicher?
+Wenn das Importierte Bild eine hohe Aufloesung hat, sollte dieses nicht auf der Konsole ausgegeben werden.
+Das Ausgeben des Bildes kann unter umstaenden mehrere Minuten dauern und kann nicht unterbrochen werden.
+(1)    Bild nicht auf Konsole ausgeben (meisten empfohlen)
+(2)    Bild auf Konsole ausgeben (in den meinsten Faellen nicht empfohlen)
+		2
+		
+Moechten sie ein weiteres Bild bearbeiten?
+(1)    ja
+(2)    nein
+		1
+
+
+		
+--- in diesem Durchlauf wird getest was mit einer kaputten pgm-Datei passiert ---
+
+Wie heisst die Datei die Importiert werden soll?
+(Bitte .pgm am Ende nicht vergessen)
+		feep2.pgm
+		
+Soll das Bild geglaettet werden oder die Kanten vom Bild hervorgehoben werden?
+(1)    Bild glaetten
+(2)    Kanten vom Bild hervorheben
+		1
+		
+Die angegebne Datei ist beschaedigt!
+
+Moechten sie ein weiteres Bild bearbeiten?
+(1)    ja
+(2)    nein
+		1
+		
+
+
+--- in diesem Durchlauf wird getestet was mit einer von GIMP exportierten Datei passiert ---
+--- die Dateien die von GIMP exportiert werden sind etwas anders aufgebaut ---
+--- anstatt das sie wie eine Matrix aussehen, ist pro Zeile nur eine Pixelhelligkeit dargestellt ---
+--- die letzte Testdatei ist zudem relativ groß (ca. 34MB, 9216004 Zeilen) ---
+
+Wie heisst die Datei die Importiert werden soll?
+(Bitte .pgm am Ende nicht vergessen)
+		ferrari.pgm
+		
+- Das importieren dauert bei dieser Datei aufgrund der größe relativ lange -
+
+Soll das Bild geglaettet werden oder die Kanten vom Bild hervorgehoben werden?
+(1)    Bild glaetten
+(2)    Kanten vom Bild hervorheben
+		2
+		
+Wie soll die zu exportierende Datei heissen?
+(Bitte .pgm am Ende nicht vergessen)
+		ferrarifertig.pgm
+		
+Moechten sie einen Kommentar hinzufuegen?
+(1)    ja
+(2)    nein
+		2
+		
+- Jetzt kann es wieder ein bisschen Dauerern, da jetzt das Bild in die Datei geschrieben wird -
+
+Soll das bearbeitete Bild auf der Konsole ausgegeben werden?
+(1)    Bild nicht auf Konsole ausgeben (empfohlen bei Bildern hoher Aufloesung)
+(2)    Bild auf Konsole ausgeben (nur wenn das Bild eine sehr geringe Aufloesung hat)
+		1
+		
+Moechten sie ein weiteres Bild bearbeiten?
+(1)    ja
+(2)    nein
+		2
